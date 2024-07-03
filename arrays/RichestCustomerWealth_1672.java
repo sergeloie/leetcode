@@ -33,6 +33,8 @@ Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
 Output: 17
  */
 
+import java.util.Arrays;
+
 public class RichestCustomerWealth_1672 {
     public int maximumWealth(int[][] accounts) {
         int max = 0;
@@ -46,5 +48,12 @@ public class RichestCustomerWealth_1672 {
             max = Math.max(max, localMax);
         }
         return max;
+    }
+
+    public int maximumWealth2(int[][] accounts) {
+        return Arrays.stream(accounts)
+                .mapToInt(row -> Arrays.stream(row).sum())
+                .max()
+                .orElse(0);
     }
 }
