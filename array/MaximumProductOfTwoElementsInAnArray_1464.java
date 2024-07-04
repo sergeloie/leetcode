@@ -28,10 +28,10 @@ Output: 12
 
 public class MaximumProductOfTwoElementsInAnArray_1464 {
     public int maxProduct(int[] nums) {
-        int maxUp = Math.max(nums[0] - 1, nums[1] - 1);
-        int maxDown = Math.min(nums[0] - 1, nums[1] - 1);
+        int maxUp = Math.max(nums[0], nums[1]);
+        int maxDown = Math.min(nums[0], nums[1]);
         for (int i = 2; i < nums.length; i++) {
-            int candidate = nums[i] - 1;
+            int candidate = nums[i];
             if (candidate > maxUp) {
                 maxDown = maxUp;
                 maxUp = candidate;
@@ -39,6 +39,6 @@ public class MaximumProductOfTwoElementsInAnArray_1464 {
                 maxDown = candidate;
             }
         }
-        return maxUp * maxDown;
+        return (maxUp - 1) * (maxDown - 1);
     }
 }
