@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         MonotonicArray_896 cls = new MonotonicArray_896();
-        int[] test = {1,3,2};
+        int[] test = {1,3,2,4};
         boolean result = cls.isMonotonic(test);
         System.out.println(result);
     }
