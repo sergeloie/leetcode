@@ -1,15 +1,11 @@
-import hashmap.CountNumberOfPairsWithAbsoluteDifferenceK_2006;
-import hashmap.GroupAnagrams_49;
-import hashmap.HowManyNumbersAreSmallerThanTheCurrentNumber_1365;
+import two_pointers.FindFirstPalindromicStringInTheArray_2108;
 import two_pointers.ReverseVowelsOfAString_345;
-
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ReverseVowelsOfAString_345 cls = new ReverseVowelsOfAString_345();
-        String s = "aA";
-        var result = cls.reverseVowels(s);
+        FindFirstPalindromicStringInTheArray_2108 cls = new FindFirstPalindromicStringInTheArray_2108();
+        String[] words = {"def","ghi"};
+        var result = cls.firstPalindrome(words);
         System.out.println((result));
     }
 }
