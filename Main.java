@@ -1,11 +1,14 @@
 import two_pointers.FindFirstPalindromicStringInTheArray_2108;
+import two_pointers.MoveZeroes_283;
 import two_pointers.ReverseVowelsOfAString_345;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        FindFirstPalindromicStringInTheArray_2108 cls = new FindFirstPalindromicStringInTheArray_2108();
-        String[] words = {"def","ghi"};
-        var result = cls.firstPalindrome(words);
-        System.out.println((result));
+        MoveZeroes_283 cls = new MoveZeroes_283();
+        int[] arr = {0};
+        cls.moveZeroes(arr);
+        System.out.println((Arrays.toString(arr)));
     }
 }
