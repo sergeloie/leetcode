@@ -1,4 +1,5 @@
 import binary_search.BinarySearch_704;
+import binary_search.FirstBadVersion_278;
 import binary_search.GuessNumberHigherOrLower_374;
 import two_pointers.FindFirstPalindromicStringInTheArray_2108;
 import two_pointers.MoveZeroes_283;
@@ -10,9 +11,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        GuessNumberHigherOrLower_374 cls = new GuessNumberHigherOrLower_374();
-        int[] nums = {-1,0,3,5,9,12, 15};
-        int result = cls.guessNumber(10);
+        FirstBadVersion_278 cls = new FirstBadVersion_278();
+        int result = cls.firstBadVersion(2126753390);
         System.out.println(result);
     }
 }
