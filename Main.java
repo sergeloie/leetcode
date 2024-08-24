@@ -1,10 +1,11 @@
+import binary_search.Sqrtx_69;
 import binary_search.ValidPerfectSquare_367;
 
 public class Main {
     public static void main(String[] args) {
-        ValidPerfectSquare_367 cls = new ValidPerfectSquare_367();
-        int target = 16;
-        boolean result = cls.isPerfectSquare(target);
+        Sqrtx_69 cls = new Sqrtx_69();
+        int target = Integer.MAX_VALUE;
+        var result = cls.mySqrt(target);
         System.out.println(result);
     }
 }
