@@ -1,11 +1,16 @@
-import binary_search.Sqrtx_69;
-import binary_search.ValidPerfectSquare_367;
+import two_pointers.FindFirstPalindromicStringInTheArray_2108;
+import two_pointers.MoveZeroes_283;
+import two_pointers.RemoveDuplicatesFromSortedArray_26;
+import two_pointers.ReverseString2_541;
+import two_pointers.ReverseVowelsOfAString_345;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sqrtx_69 cls = new Sqrtx_69();
-        int target = Integer.MAX_VALUE;
-        var result = cls.mySqrt(target);
+        ReverseString2_541 cls = new ReverseString2_541();
+        String str = "abcdefg";
+        String result = cls.reverseStr(str, 2);
         System.out.println(result);
     }
 }
