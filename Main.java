@@ -1,5 +1,6 @@
 import linked_list.ListNode;
 import linked_list.MergeTwoSortedLists_21;
+import stack.BackspaceStringCompare_844;
 import stack.MakeTheStringGreat_1544;
 import stack.RemoveAllAdjacentDuplicatesInString_1047;
 import two_pointers.FindFirstPalindromicStringInTheArray_2108;
@@ -12,9 +13,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        MakeTheStringGreat_1544 cls = new MakeTheStringGreat_1544();
-        String s = "leEeetcode";
-        System.out.println(cls.makeGood(s));
+        BackspaceStringCompare_844 cls = new BackspaceStringCompare_844();
+        String s = "a####c";
+        String t = "c#d#";
+        System.out.println(cls.backspaceCompare(s, t));
 
     }
 
