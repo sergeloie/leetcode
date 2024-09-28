@@ -1,5 +1,6 @@
 import linked_list.ListNode;
 import linked_list.MergeTwoSortedLists_21;
+import stack.MakeTheStringGreat_1544;
 import stack.RemoveAllAdjacentDuplicatesInString_1047;
 import two_pointers.FindFirstPalindromicStringInTheArray_2108;
 import two_pointers.MoveZeroes_283;
@@ -11,9 +12,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        RemoveAllAdjacentDuplicatesInString_1047 cls = new RemoveAllAdjacentDuplicatesInString_1047();
-        String s = "";
-        System.out.println(cls.removeDuplicates(s));
+        MakeTheStringGreat_1544 cls = new MakeTheStringGreat_1544();
+        String s = "leEeetcode";
+        System.out.println(cls.makeGood(s));
 
     }
 
