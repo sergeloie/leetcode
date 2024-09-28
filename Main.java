@@ -14,9 +14,9 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         BackspaceStringCompare_844 cls = new BackspaceStringCompare_844();
-        String s = "a####c";
-        String t = "c#d#";
-        System.out.println(cls.backspaceCompare(s, t));
+        String s = "ab#c";
+        String t = "ad#c";
+        System.out.println(cls.backspaceCompare2(s, t));
 
     }
 
