@@ -1,35 +1,25 @@
-import arrays.*;
-import hashmap.FindMostFrequentVowelAndConsonant_3541;
-import hashmap.FirstUniqueCharacterInAString_387_v2;
-import matrix.LargestLocalValuesInAMatrix_2373;
-import recursion.PowerOfThree_326;
-import stack.DailyTemperatures_739;
-import stack.ValidParentheses_20;
-import strings.ConvertDateToBinary_3280;
-import strings.ReverseDegreeOfAString_3498;
-import strings.ScoreOfAString_3110;
-
-import java.util.Arrays;
-import java.util.List;
+import linked_list.IntersectionOfTwoLinkedLists_160;
+import linked_list.ListNode;
 
 public class Main {
     public static void main(String[] args) {
-        NumberOfArithmeticTriplets_2367 cls = new NumberOfArithmeticTriplets_2367();
+        IntersectionOfTwoLinkedLists_160 cls = new IntersectionOfTwoLinkedLists_160();
 
-        int[] nums = new int[]{4,5,6,7,8,9};
-        int[] index  = new int[]{0};
-        int diff = 2;
-        System.out.println(cls.arithmeticTriplets(nums, diff));
+        ListNode intersect = new ListNode(8);
+        ListNode intersect01 = new ListNode(4);
+        intersect.next = intersect01;
+
+        ListNode intersect02 = new ListNode(5);
+        intersect01.next = intersect02;
 
 
-//        System.out.println('a' - 96);
-//        System.out.println('b' - 96);
-//        System.out.println('z' - 96);
-//
-//        System.out.println(Math.abs('a' - 123));
-//        System.out.println(Math.abs('b' - 123));
-//        System.out.println(Math.abs('c' - 123));
-//        System.out.println(Math.abs('z' - 123));
+        ListNode headA = new ListNode(4);
+        ListNode headA01 = new ListNode(1, intersect);
+        headA.next = headA01;
+
+        ListNode headB = new ListNode(5, new ListNode(6, new ListNode(1, intersect)));
+
+        cls.getIntersectionNode(headA, headB);
 
 
     }
