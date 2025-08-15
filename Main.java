@@ -1,30 +1,28 @@
-import array.FindAllNumbersDisappearedInAnArray_448;
-import arrays.MaximumProductOfThreeNumbers_628;
-import arrays.NextGreaterElement1_496;
-import arrays.ThirdMaximumNumber_414;
-import strings.DetectCapital_520;
-import strings.LicenseKeyFormatting_482;
-import strings.MostCommonWord_819;
-import strings.ReverseWordsInAString3_557;
-import strings.RotateString_796;
+import matrix.IslandPerimeter_463;
+import strings.KeyboardRow_500;
 
 import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 
 public class Main {
     public static void main(String[] args) {
-        MostCommonWord_819 cls = new MostCommonWord_819();
-        int[] nums1 = new int[]{4,3,2,7,8,2,3,1};
-        int[] nums2 = new int[]{1,1};
+        KeyboardRow_500 cls = new KeyboardRow_500();
+        int[][] grid = new int[][]{{0,1,0,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
+        int[][] grid2 = new int[][]{{1, 0}};
 
-        String paragraph  = "a, a, a, a, b,b,b,c, c";
-        String[] banned = new String[]{"a"};
+        Set<Character> firstRow = "qwertyuiop".chars()
+                .mapToObj(c -> (char) c )
+                .collect(Collectors.toSet());
+        Set<Character> secondRow = "asdfghjkl".chars()
+                .mapToObj(c -> (char) c )
+                .collect(Collectors.toSet());
+        Set<Character> thirdRow = "zxcvbnm".chars()
+                .mapToObj(c -> (char) c )
+                .collect(Collectors.toSet());
 
-        System.out.println(cls.mostCommonWord(paragraph, banned));
-//        StringBuilder sb = new StringBuilder("ABCDEFG");
-//        System.out.println(sb.insert(4, 4).insert(2,2));
-
-
+        System.out.println(Arrays.toString(cls.findWords(new String[]{"adsdf","sfd"})));
 
 
     }
