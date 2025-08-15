@@ -1,5 +1,6 @@
 import matrix.IslandPerimeter_463;
 import strings.KeyboardRow_500;
+import strings.UniqueMorseCodeWords_804;
 
 import java.util.Arrays;
 import java.util.Set;
@@ -8,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        KeyboardRow_500 cls = new KeyboardRow_500();
+        UniqueMorseCodeWords_804 cls = new UniqueMorseCodeWords_804();
         int[][] grid = new int[][]{{0,1,0,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
         int[][] grid2 = new int[][]{{1, 0}};
 
@@ -22,7 +23,7 @@ public class Main {
                 .mapToObj(c -> (char) c )
                 .collect(Collectors.toSet());
 
-        System.out.println(Arrays.toString(cls.findWords(new String[]{"adsdf","sfd"})));
+        System.out.println(cls.uniqueMorseRepresentations(new String[]{"gin","zen","gig","msg"}));
 
 
     }
