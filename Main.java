@@ -1,13 +1,12 @@
-import strings.MinimumIndexSumOfTwoLists_599;
+import array.SetMismatch_645;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        MinimumIndexSumOfTwoLists_599 klass = new MinimumIndexSumOfTwoLists_599();
-        String[] list1 = new String[]{"happy","sad","good"};
-        String[] list2 = new String[]{"sad","happy","good"};
-        System.out.println(Arrays.toString(klass.findRestaurant(list1, list2)));
+        var klass = new SetMismatch_645();
+        int[] nums = new int[]{1,1};
+        System.out.println(Arrays.toString(klass.findErrorNums(nums)));
 
 
     }
