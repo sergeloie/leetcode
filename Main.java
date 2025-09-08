@@ -1,5 +1,7 @@
 import array.FindSmallestLetterGreaterThanTarget_744;
+import array.MinimumAverageOfSmallestAndLargestElements_3194;
 import array.SetMismatch_645;
+import array.SumOfVariableLengthSubarrays_3427;
 import hashmap.MaximumNumberOfBalloons_1189;
 import matrix.ProjectionAreaOf3DShapes_883;
 import matrix.SurfaceAreaOf3DShapes_892;
@@ -13,7 +15,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new MaximumNumberOfBalloons_1189();
+        var klass = new MinimumAverageOfSmallestAndLargestElements_3194();
         int[][] grid = new int[][]{{1, 2}, {3, 4}};
         int[][] grid2 = new int[][]{{2}};
         int[][] grid4 = new int[][]{{1, 0}, {0, 2}};
@@ -21,7 +23,16 @@ public class Main {
 
         String[] emails = new String[]{"a@leetcode.com","b@leetcode.com","c@leetcode.com"};
         String text = "leetcode";
-        System.out.println(klass.maxNumberOfBalloons(text));
+
+
+
+
+
+
+
+
+        int[] nums = new int[]{1,2,3,7,8,9};
+        System.out.println(klass.minimumAverage(nums));
     }
 }
 
