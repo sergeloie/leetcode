@@ -5,6 +5,7 @@ import array.SetMismatch_645;
 import array.SumOfAllOddLengthSubarrays_1588;
 import array.SumOfValuesAtIndicesWithKSetBits_2859;
 import array.SumOfVariableLengthSubarrays_3427;
+import arrays.CountEqualAndDivisiblePairsInAnArray_2176;
 import hashmap.MaximumNumberOfBalloons_1189;
 import hashmap.SortThePeople_2418;
 import matrix.ProjectionAreaOf3DShapes_883;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new ClearDigits_3174();
+        var klass = new CountEqualAndDivisiblePairsInAnArray_2176();
         int[][] grid = new int[][]{{1, 3}, {2, 2}};
         int[][] grid2 = new int[][]{{2}};
         int[][] grid4 = new int[][]{{1, 0}, {0, 2}};
@@ -37,8 +38,8 @@ public class Main {
 
 
 
-        int[] nums = new int[]{10,11,12};
-        System.out.println((klass.clearDigits2(text)));
+        int[] nums = new int[]{1,2,3,4};
+        System.out.println((klass.countPairs(nums, 2)));
     }
 }
 
