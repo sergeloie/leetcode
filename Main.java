@@ -1,3 +1,4 @@
+import array.FindCommonElementsBetweenTwoArrays_2956;
 import array.FindMissingAndRepeatedValues_2965;
 import array.FindSmallestLetterGreaterThanTarget_744;
 import array.MinimumAverageOfSmallestAndLargestElements_3194;
@@ -24,7 +25,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new MinimumElementAfterReplacementWithDigitSum_3300();
+        var klass = new FindCommonElementsBetweenTwoArrays_2956();
         int[][] grid = new int[][]{{1, 3}, {2, 2}};
         int[][] grid2 = new int[][]{{2}};
         int[][] grid4 = new int[][]{{1, 0}, {0, 2}};
@@ -40,8 +41,9 @@ public class Main {
 
 
 
-        int[] nums = new int[]{999,19,199};
-        System.out.println(klass.minElement(nums));
+        int[] num1 = new int[]{4,3,2,3,1};
+        int[] num2 = new int[]{2,2,5,2,3,6};
+        System.out.println(Arrays.toString(klass.findIntersectionValues2(num1, num2)));
     }
 }
 

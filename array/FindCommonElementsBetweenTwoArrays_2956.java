@@ -28,4 +28,35 @@ public class FindCommonElementsBetweenTwoArrays_2956 {
 
         return new int[]{answer1, answer2};
     }
+
+    public int[] findIntersectionValues2(int[] nums1, int[] nums2) {
+        int[] num1Count = new int[101];
+        int[] num2Count = new int[101];
+
+        for (int num: nums1) {
+            num1Count[num] = 1;
+        }
+
+        for (int num: nums2) {
+            num2Count[num] = 1;
+        }
+
+        int answer1 = 0;
+        int answer2 = 0;
+
+        for (int num: nums1) {
+            if (num2Count[num] > 0) {
+                answer1++;
+            }
+        }
+
+        for (int num: nums2) {
+            if (num1Count[num] > 0) {
+                answer2++;
+            }
+        }
+
+        return new int[]{answer1, answer2};
+
+    }
 }
