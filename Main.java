@@ -1,3 +1,4 @@
+import array.DuplicateZeros_1089;
 import array.FindCommonElementsBetweenTwoArrays_2956;
 import array.FindMissingAndRepeatedValues_2965;
 import array.FindSmallestLetterGreaterThanTarget_744;
@@ -12,6 +13,7 @@ import hashmap.MaximumNumberOfBalloons_1189;
 import hashmap.SortThePeople_2418;
 import matrix.ProjectionAreaOf3DShapes_883;
 import matrix.SurfaceAreaOf3DShapes_892;
+import strings.AddStrings_415;
 import strings.CellsInARangeOnAnExcelSheet_2194;
 import strings.ClearDigits_3174;
 import strings.CountAsterisks_2315;
@@ -25,7 +27,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new FindCommonElementsBetweenTwoArrays_2956();
+        var klass = new DuplicateZeros_1089();
         int[][] grid = new int[][]{{1, 3}, {2, 2}};
         int[][] grid2 = new int[][]{{2}};
         int[][] grid4 = new int[][]{{1, 0}, {0, 2}};
@@ -35,15 +37,20 @@ public class Main {
         String text = "A1:F1";
 
 
+        String num1 = "999";
+        String num2 = "999";
 
 
 
 
 
 
-        int[] num1 = new int[]{4,3,2,3,1};
-        int[] num2 = new int[]{2,2,5,2,3,6};
-        System.out.println(Arrays.toString(klass.findIntersectionValues2(num1, num2)));
+
+
+//        int[] num1 = new int[]{4,3,2,3,1};
+//        int[] num2 = new int[]{2,2,5,2,3,6};
+        int[] arr = new int[]{1,2,3};
+        klass.duplicateZeros(arr);
     }
 }
 
