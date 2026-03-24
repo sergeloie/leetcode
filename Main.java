@@ -1,14 +1,10 @@
-import array.CountPartitionswithEvenSumDifference_3432;
-import array.FindMissingElements_3731;
-import array.SumofSquaresofSpecialElements_2778;
-import array.bitAnd2bitCharacters_717;
-import matrix.EarliestTimetoFinishOneTask_3683;
+import array.SpecialArray1_3151;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new FindMissingElements_3731();
-        var arr = new int[]{5,1};
-        System.out.println(klass.findMissingElements(arr));
+        var klass = new SpecialArray1_3151();
+        var arr = new int[]{4,3,1,6};
+        System.out.println(klass.isArraySpecial(arr));
 
     }
 }
