@@ -3,16 +3,19 @@ import array.SpecialArray1_3151;
 import array.WeightedWordMapping_3838;
 import matrix.CellswithOddValuesinaMatrix_1252;
 import matrix.CheckIfItIsaStraightLine_1232;
+import sort.SortIntegersbyTheNumberof1Bits_1356;
 import strings.CheckBalancedString_3340;
 import strings.DecryptStringfromAlphabettoIntegerMapping_1309;
 import strings.ReplaceAllDigitswithCharacters_1844;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        var klass = new CheckBalancedString_3340();
+        var klass = new SortIntegersbyTheNumberof1Bits_1356();
         var strArr = new String[]{"abcd","def","xyz"};
-        var arr = new int[]{5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2};
-        System.out.println(klass.isBalanced("24123"));
+        var arr = new int[]{1024,512,256,128,64,32,16,8,4,2,1};
+        System.out.println(Arrays.toString(klass.sortByBits(arr)));
 
     }
 }
