@@ -7,17 +7,16 @@ import matrix.MinimumTimeVisitingAllPoints_1266;
 import sort.SortIntegersbyTheNumberof1Bits_1356;
 import strings.CheckBalancedString_3340;
 import strings.DecryptStringfromAlphabettoIntegerMapping_1309;
+import strings.MaximumOddBinaryNumber_2864;
 import strings.ReplaceAllDigitswithCharacters_1844;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new MinimumTimeVisitingAllPoints_1266();
-        var strArr = new String[]{"abcd","def","xyz"};
-        var arr = new int[]{1024,512,256,128,64,32,16,8,4,2,1};
-        var matrix = new int[][]{{3,2},{-2,2}};
-        System.out.println(klass.minTimeToVisitAllPoints(matrix));
+        var klass = new MaximumOddBinaryNumber_2864();
+        var strArr = "010";
+        System.out.println(klass.maximumOddBinaryNumber(strArr));
 
     }
 }
