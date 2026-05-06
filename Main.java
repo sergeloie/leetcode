@@ -14,6 +14,7 @@ import sort.SortIntegersbyTheNumberof1Bits_1356;
 import strings.CheckBalancedString_3340;
 import strings.CountBinarySubstrings_696;
 import strings.DecryptStringfromAlphabettoIntegerMapping_1309;
+import strings.FirstMatchingCharacterFromBothEnds_3884;
 import strings.MaximumOddBinaryNumber_2864;
 import strings.ReplaceAllDigitswithCharacters_1844;
 
@@ -22,10 +23,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new TeemoAttacking_495();
+        var klass = new FirstMatchingCharacterFromBothEnds_3884();
         int[] arr = new int[]{1,2};
         int dur = 2;
-        System.out.println((klass.findPoisonedDuration(arr, dur)));
+        String s = "abcdab";
+        System.out.println((klass.firstMatchingIndex(s)));
 
     }
 }
