@@ -14,6 +14,7 @@ import sort.SortIntegersbyTheNumberof1Bits_1356;
 import strings.CheckBalancedString_3340;
 import strings.CountBinarySubstrings_696;
 import strings.DecryptStringfromAlphabettoIntegerMapping_1309;
+import strings.FindMaximumNumberofStringPairs_2744;
 import strings.FirstMatchingCharacterFromBothEnds_3884;
 import strings.MaximumOddBinaryNumber_2864;
 import strings.ReplaceAllDigitswithCharacters_1844;
@@ -23,11 +24,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new FirstMatchingCharacterFromBothEnds_3884();
-        int[] arr = new int[]{1,2};
-        int dur = 2;
-        String s = "abcdab";
-        System.out.println((klass.firstMatchingIndex(s)));
+        var klass = new FindMaximumNumberofStringPairs_2744();
+        String[] arr = new String[]{"aa","ab"};
+        System.out.println((klass.maximumNumberOfStringPairs(arr)));
 
     }
 }
