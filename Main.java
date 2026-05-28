@@ -11,6 +11,7 @@ import hashset.AssignCookies_455;
 import matrix.CellswithOddValuesinaMatrix_1252;
 import matrix.CheckIfItIsaStraightLine_1232;
 import matrix.MinimumTimeVisitingAllPoints_1266;
+import matrix.ReshapetheMatrix_566;
 import matrix.SnakeinMatrix_3248;
 import sort.SortIntegersbyTheNumberof1Bits_1356;
 import strings.CheckBalancedString_3340;
@@ -28,9 +29,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new LongestPalindrome_409();
-        String s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
-        System.out.println((klass.longestPalindrome(s)));
+        var klass = new ReshapetheMatrix_566();
+        int[][] mat = new int[][]{{1,2}, {3, 4}};
+        System.out.println(Arrays.deepToString(klass.matrixReshape(mat, 2, 4)));
 
     }
 }
