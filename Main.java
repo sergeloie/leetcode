@@ -5,6 +5,7 @@ import arrays.DIStringMatch_942;
 import arrays.IntersectionofTwoArrays2_350;
 import arrays.LongestHarmoniousSubsequence_594;
 import arrays.MaximumSumWithExactlyKElements_2656;
+import arrays.MinCostClimbingStairs_746;
 import arrays.RelativeRanks_506;
 import arrays.TeemoAttacking_495;
 import hashset.AssignCookies_455;
@@ -29,9 +30,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new ReshapetheMatrix_566();
-        int[][] mat = new int[][]{{1,2}, {3, 4}};
-        System.out.println(Arrays.deepToString(klass.matrixReshape(mat, 2, 4)));
+        var klass = new MinCostClimbingStairs_746();
+        int[] arr = new int[]{0,2,2,1};
+        System.out.println(klass.minCostClimbingStairs(arr));
 
     }
 }
