@@ -24,15 +24,17 @@ import strings.LongestPalindrome_409;
 import strings.MaximumOddBinaryNumber_2864;
 import strings.RepeatedSubstringPattern_459;
 import strings.ReplaceAllDigitswithCharacters_1844;
+import strings.ValidPalindrome2_680;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new MinCostClimbingStairs_746();
+        var klass = new ValidPalindrome2_680();
         int[] arr = new int[]{0,2,2,1};
-        System.out.println(klass.minCostClimbingStairs(arr));
+        String s = "aba";
+        System.out.println(klass.validPalindrome(s));
 
     }
 }
