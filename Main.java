@@ -1,6 +1,7 @@
 import array.CheckIfNandItsDoubleExist_1346;
 import array.SpecialArray1_3151;
 import array.WeightedWordMapping_3838;
+import arrays.ArrayPartition_561;
 import arrays.DIStringMatch_942;
 import arrays.IntersectionofTwoArrays2_350;
 import arrays.LongestHarmoniousSubsequence_594;
@@ -22,6 +23,7 @@ import strings.FindMaximumNumberofStringPairs_2744;
 import strings.FirstMatchingCharacterFromBothEnds_3884;
 import strings.LongestPalindrome_409;
 import strings.MaximumOddBinaryNumber_2864;
+import strings.NumberofLinesToWriteString_806;
 import strings.RepeatedSubstringPattern_459;
 import strings.ReplaceAllDigitswithCharacters_1844;
 import strings.ValidPalindrome2_680;
@@ -31,10 +33,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new ValidPalindrome2_680();
-        int[] arr = new int[]{0,2,2,1};
-        String s = "aba";
-        System.out.println(klass.validPalindrome(s));
+        var klass = new NumberofLinesToWriteString_806();
+        int[] widths  = new int[]{4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
+        String s = "bbbcccdddaaa";
+        System.out.println(Arrays.toString(klass.numberOfLines(widths, s)));
 
     }
 }
