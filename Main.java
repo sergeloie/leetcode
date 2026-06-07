@@ -9,6 +9,7 @@ import arrays.MaximumSumWithExactlyKElements_2656;
 import arrays.MinCostClimbingStairs_746;
 import arrays.RelativeRanks_506;
 import arrays.TeemoAttacking_495;
+import hashmap.UncommonWordsfromTwoSentences_884;
 import hashset.AssignCookies_455;
 import matrix.CellswithOddValuesinaMatrix_1252;
 import matrix.CheckIfItIsaStraightLine_1232;
@@ -21,6 +22,7 @@ import strings.CountBinarySubstrings_696;
 import strings.DecryptStringfromAlphabettoIntegerMapping_1309;
 import strings.FindMaximumNumberofStringPairs_2744;
 import strings.FirstMatchingCharacterFromBothEnds_3884;
+import strings.GoatLatin_824;
 import strings.LongestPalindrome_409;
 import strings.MaximumOddBinaryNumber_2864;
 import strings.NumberofLinesToWriteString_806;
@@ -30,13 +32,14 @@ import strings.ValidPalindrome2_680;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        var klass = new NumberofLinesToWriteString_806();
-        int[] widths  = new int[]{4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
-        String s = "bbbcccdddaaa";
-        System.out.println(Arrays.toString(klass.numberOfLines(widths, s)));
+        var klass = new UncommonWordsfromTwoSentences_884();
+        var s1 = "apple apple";
+        var s2 = "banana";
+        System.out.println(Arrays.toString(klass.uncommonFromSentences(s1, s2)));
 
     }
 }
