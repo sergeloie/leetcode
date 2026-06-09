@@ -8,6 +8,7 @@ import arrays.LongestHarmoniousSubsequence_594;
 import arrays.MaximumSumWithExactlyKElements_2656;
 import arrays.MinCostClimbingStairs_746;
 import arrays.RelativeRanks_506;
+import arrays.SmallestRange1_908;
 import arrays.TeemoAttacking_495;
 import hashmap.UncommonWordsfromTwoSentences_884;
 import hashset.AssignCookies_455;
@@ -29,17 +30,19 @@ import strings.NumberofLinesToWriteString_806;
 import strings.RepeatedSubstringPattern_459;
 import strings.ReplaceAllDigitswithCharacters_1844;
 import strings.ValidPalindrome2_680;
+import yandex.Task1;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
 public class Main {
-    public static void main(String[] args) {
-        var klass = new UncommonWordsfromTwoSentences_884();
-        var s1 = "apple apple";
-        var s2 = "banana";
-        System.out.println(Arrays.toString(klass.uncommonFromSentences(s1, s2)));
+    public static void main(String[] args) throws IOException {
+        var klass = new SmallestRange1_908();
+        var arr = new int[]{1,3,6};
+        var k = 3;
+        System.out.println((klass.smallestRangeI(arr, k)));
 
     }
 }
