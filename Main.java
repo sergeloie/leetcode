@@ -29,6 +29,7 @@ import strings.MaximumOddBinaryNumber_2864;
 import strings.NumberofLinesToWriteString_806;
 import strings.RepeatedSubstringPattern_459;
 import strings.ReplaceAllDigitswithCharacters_1844;
+import strings.ShortestCompletingWord_748;
 import strings.ValidPalindrome2_680;
 import yandex.Task1;
 
@@ -39,10 +40,10 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var klass = new SmallestRange1_908();
-        var arr = new int[]{1,3,6};
-        var k = 3;
-        System.out.println((klass.smallestRangeI(arr, k)));
+        var klass = new ShortestCompletingWord_748();
+        String licensePlate = "tR28607";
+        String[] words = new String[]{"present","fall","make","change","everything","performance","owner","beat","name","serve"};
+        System.out.println(klass.shortestCompletingWord(licensePlate, words));
 
     }
 }
