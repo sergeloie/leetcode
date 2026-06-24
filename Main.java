@@ -27,6 +27,7 @@ import strings.GoatLatin_824;
 import strings.LongestPalindrome_409;
 import strings.MaximumOddBinaryNumber_2864;
 import strings.NumberofLinesToWriteString_806;
+import strings.PositionsOfLargeGroups_830;
 import strings.RepeatedSubstringPattern_459;
 import strings.ReplaceAllDigitswithCharacters_1844;
 import strings.ShortestCompletingWord_748;
@@ -41,11 +42,9 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var klass = new ShortestDistancetoaCharacter_821();
-        String s = "aaab";
-        char c = 'b';
-        System.out.println(Arrays.toString(klass.shortestToChar(s, c)));
-
+        var klass = new PositionsOfLargeGroups_830();
+        String s = "bababbabaa";
+        System.out.println(klass.largeGroupPositions(s));
     }
 }
 
