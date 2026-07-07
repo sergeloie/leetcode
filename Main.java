@@ -2,6 +2,7 @@ import array.CheckIfNandItsDoubleExist_1346;
 import array.SpecialArray1_3151;
 import array.WeightedWordMapping_3838;
 import arrays.ArrayPartition_561;
+import arrays.BaseballGame_682;
 import arrays.DIStringMatch_942;
 import arrays.IntersectionofTwoArrays2_350;
 import arrays.LongestHarmoniousSubsequence_594;
@@ -42,9 +43,9 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var klass = new PositionsOfLargeGroups_830();
-        String s = "bababbabaa";
-        System.out.println(klass.largeGroupPositions(s));
+        var klass = new BaseballGame_682();
+        String[] s = new String[]{"1","C"};
+        System.out.println(klass.calPoints(s));
     }
 }
 
