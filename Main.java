@@ -34,6 +34,7 @@ import strings.ReplaceAllDigitswithCharacters_1844;
 import strings.ShortestCompletingWord_748;
 import strings.ShortestDistancetoaCharacter_821;
 import strings.ValidPalindrome2_680;
+import strings.VerifyinganAlienDictionary_953;
 import yandex.Task1;
 
 import java.io.IOException;
@@ -43,9 +44,10 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var klass = new BaseballGame_682();
-        String[] s = new String[]{"1","C"};
-        System.out.println(klass.calPoints(s));
+        var klass = new VerifyinganAlienDictionary_953();
+        String[] s = new String[]{"apple","app"};
+        String order = "abcdefghijklmnopqrstuvwxyz";
+        System.out.println(klass.isAlienSorted(s, order));
     }
 }
 
