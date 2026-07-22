@@ -1,16 +1,7 @@
 import array.CheckIfNandItsDoubleExist_1346;
 import array.SpecialArray1_3151;
 import array.WeightedWordMapping_3838;
-import arrays.ArrayPartition_561;
-import arrays.BaseballGame_682;
-import arrays.DIStringMatch_942;
-import arrays.IntersectionofTwoArrays2_350;
-import arrays.LongestHarmoniousSubsequence_594;
-import arrays.MaximumSumWithExactlyKElements_2656;
-import arrays.MinCostClimbingStairs_746;
-import arrays.RelativeRanks_506;
-import arrays.SmallestRange1_908;
-import arrays.TeemoAttacking_495;
+import arrays.*;
 import hashmap.UncommonWordsfromTwoSentences_884;
 import hashset.AssignCookies_455;
 import matrix.CellswithOddValuesinaMatrix_1252;
@@ -44,10 +35,9 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var klass = new VerifyinganAlienDictionary_953();
-        String[] s = new String[]{"apple","app"};
-        String order = "abcdefghijklmnopqrstuvwxyz";
-        System.out.println(klass.isAlienSorted(s, order));
+        var klass = new NumberofEquivalentDominoPairs_1128();
+        int[][] arr = new int[][]{{1,2},{2,1},{3,4},{2,1}};
+        System.out.println(klass.numEquivDominoPairs(arr));
     }
 }
 
